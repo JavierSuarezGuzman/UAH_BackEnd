@@ -10,7 +10,21 @@ using API_tareas.Models;
 /*Agrega el contexto de base de datos para el contenedor de DI.
 Especifica que el contexto de base de datos usará una base de datos en memoria.*/
 
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(MyAllowSpecificOrigins,
+                          policy =>
+                          {
+                              policy.WithOrigins("http://localhost:3000",
+                                                  "https://localhost:7126")
+                                                  .AllowAnyHeader()
+                                                  .AllowAnyMethod();
+                          });
+});
 
 // Add services to the container.
 
@@ -33,6 +47,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
