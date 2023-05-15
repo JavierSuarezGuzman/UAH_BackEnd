@@ -275,3 +275,6 @@ D:\Estudios\Prog\.Net\Projects\API_tareas\API_tareas\bin\Debug\net7.0\runtimes\u
 D:\Estudios\Prog\.Net\Projects\API_tareas\API_tareas\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\Estudios\Prog\.Net\Projects\API_tareas\API_tareas\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Estudios\Prog\.Net\Projects\API_tareas\API_tareas\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Estudios\Prog\.Net\Projects\API_tareas\API_tareas\obj\Debug\net7.0\API_tareas.RazorAssemblyInfo.cache
+D:\Estudios\Prog\.Net\Projects\API_tareas\API_tareas\obj\Debug\net7.0\API_tareas.RazorAssemblyInfo.cs
+D:\Estudios\Prog\.Net\Projects\API_tareas\API_tareas\bin\Debug\net7.0\System.Web.Cors.dll

@@ -1,3 +1,6 @@
+/* Javier Suárez Guzmán
+ * Mayo 2023 */
+
 /*En ASP.NET Core, los servicios (como el contexto de la base de
  * datos) deben registrarse con el contenedor de inserción de dependencias (DI). 
  * El contenedor proporciona el servicio a los controladores.*/
@@ -12,6 +15,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddDbContext<AlumnoDbContext>(opt =>
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
 builder.Services.AddDbContext<TareaContext>(opt =>
     opt.UseInMemoryDatabase("TareaList"));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
